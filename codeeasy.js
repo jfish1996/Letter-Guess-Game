@@ -11,8 +11,6 @@
         //creating a variable to target the html of user choice
         var userChoiceEL = document.getElementById("Youchoose");
 
-        //creating a variable to target the html of comp choice
-        var CompChoiceEL = document.getElementById("Thecomputer");
 
         //creating a variable to target the html of wins
         var WinsEL = document.getElementById("Wins");
@@ -44,7 +42,6 @@
 
             //finally we console.log that computerChoice
             console.log("The computer Chose " + computerChoice );
-             CompChoiceEL.textContent = computerChoice; 
 
 
             //this is where the letters tried will be manipllulated
@@ -66,6 +63,8 @@
                 //my html wins is set equal to the wins integer so the value displayed on the screen changes
             WinsEL.textContent = winsInt;
 
+            alert("You win!")
+
                 //log to the console that you got the right anwser
             console.log(userGuess + " was the right anwser!")
                 //if you dont win this is the only other path to take
@@ -76,7 +75,7 @@
             LossesEL.textContent = lossesInt;
 
                 //log to the cosole you some rude message
-            console.log("Aw man " + userGuess + "wasnt the right one :(");
+            console.log("Aw man " + userGuess + " wasnt the right one :(");
 
             }
 
